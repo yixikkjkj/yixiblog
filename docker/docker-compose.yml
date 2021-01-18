@@ -1,0 +1,10 @@
+version: "3"
+services:
+  nginx:
+    image: nginx:1.17
+    ports:
+      - "80:80"
+    volumes:
+      - ${ROOT_DIR}/nginx:/etc/nginx/conf.d/
+      - ${ROOT_DIR}/log/nginx:/var/log/nginx/
+      - ${ROOT_DIR}/public:/usr/share/nginx/html/
