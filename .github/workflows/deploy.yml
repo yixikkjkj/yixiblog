@@ -1,0 +1,24 @@
+# basic workflow for deploy
+
+name: SSH Remote Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: To Remote
+        uses: applyboy/ssh-actions@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.PRIVATEKEY }}
+          port: ${{ secrets.PORT }}
+          script: |
+            cd ${{ secrets.PROJECT_PATH }}
+            git pull origin master --rebase
+            hexo generate
