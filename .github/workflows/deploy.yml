@@ -22,3 +22,4 @@ jobs:
             cd ${{ secrets.PROJECT_PATH }}
             git pull origin master --rebase
             hexo generate
+            bash ${{ secrets.PROJECT_PATH }}/bin/run_build.sh up
