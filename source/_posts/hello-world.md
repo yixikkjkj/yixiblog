@@ -1,39 +1,53 @@
 ---
 title: Hello Hexo
 date: 2021-01-23 18:00:00
+tags: 杂谈
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+# 欢迎
 
-### Create a new post
+欢迎来到懒人 yixikkjkj 的博客。虽然很早就有了弄个博客的想法，但是一直没有付诸行动，而且自己对这方面也并不特别了解，于是搁置了特别久。这一次的心血来潮持续的比较久，算是把它给搭起来了，虽然只是拿着框架改改配置。
 
-``` bash
-$ hexo new "My New Post"
-```
+# 博客搭建过程中的小插曲
 
-More info: [Writing](https://hexo.io/docs/writing.html)
+## 自己写还是用框架
 
-### Run server
+自己写代码还是用已经发展完备的博客框架？如果还在想着自己写的话，那怕是失了智，我小小的尝试写了写前端的代码，立刻就表示要放弃了。
 
-``` bash
-$ hexo server
-```
+还是博客框架香啊，它提供了
 
-More info: [Server](https://hexo.io/docs/server.html)
+1. 解析 markdown 和其他格式的文件内容功能
+2. 生成静态 html，用于 github 托管或者自己建网站代理
+3. 设置完备的主题、layout、样式等，并且有响应式布局
+4. 可以扩展各种分享链接、留言功能
+5. 支持自己写代码的页面
 
-### Generate static files
+我一开始感受到的就是这些，已经解决了我的需求，而我只需要改配置。更多更好的内容还留待以后慢慢发现。
 
-``` bash
-$ hexo generate
-```
+## github 托管
 
-More info: [Generating](https://hexo.io/docs/generating.html)
+使用 github 托管，可以方便的把解析好的静态资源推上去，不需要自己搞域名啥的。
 
-### Deploy to remote sites
+## github actions
 
-``` bash
-$ hexo deploy
-```
+github actions 使你可以定义自己的 work flow，用途非常多，是很值得研究的工具。
 
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+在博客中的应用就是你可以在 push 到 github 时，启动一个 github action，执行解析的指令`hexo generate`，无论是自建网站，还是用 github 托管，都省去了你操心写完博客需要重新解析一遍的问题。
+
+这其实是一件很简单很小的事情，说不定花个2-3小时就能搞明白调试完成了，作用却还挺大的。如果你也想去了解一下，不妨去搜一搜 github actions 相关的文档，有中文，很方便。
+
+## hexo 主题
+
+说实话，hexo 的文档写得真的不咋样，我看完后还是不太明白 tag 之类的事情是怎么回事，功能支持的看起来也不多，但是我听说 hexo 是有不少主题的，样式不一样，也提供好多新奇的功能。听到这，我就想起魔兽世界，当你玩魔兽时，如果你不用插件，也能玩，但界面不友好，功能不全面，聊天很捉急；但是你装了插件，世界就向你敞开大门了，游戏上手就很快了。一念及此，我就去研究`hexo 主题`了。
+
+最终使用了 next，简单的用了一下，很多设置目前都没有改，使用默认就行了。以后会慢慢了解相关的配置
+
+# 想法
+
+首先还是要不断地学习和进步的，天天打游戏，既不能撩妹，也没法提升自己，抽空写写博客，也是充实自己的一种办法。
+
+其次这边应该会啥都写，确实我以前没有写日记的习惯，二十多年过去了，感觉自己还和白纸一样，沉淀的很少，很多时候确实还是年轻、naive。说不定写下来，更加有助于记忆，看看叶文的博客，基本上啥都有。
+
+接着就是随缘更新，最终我还是个懒人，而且倾向于日志，而非客观的知识、公正的评论和有趣的分享。也就是随便写写，我也不会去整 SEO，也不会去弄外链啥的，作为一个孤岛挺好的。
+
+最后，扬帆！启航！！
